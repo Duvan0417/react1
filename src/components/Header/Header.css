@@ -1,0 +1,9 @@
+.header{
+    background-color: #0d7486;
+    color: beige;
+    text-align: center;
+    border-radius: 5px;
+}
+.footer:hover::shadow:hover::shadow{
+    background: rgb(12, 12, 12);
+}

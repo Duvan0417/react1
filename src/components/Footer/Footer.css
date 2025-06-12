@@ -1,0 +1,9 @@
+.footer{
+    background-color: #0d7486;
+    color: beige;
+    text-align: center;
+    border-radius: 5px;
+}
+.footer:hover{
+    background: #054853
+}

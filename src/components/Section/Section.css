@@ -1,0 +1,10 @@
+.Section{
+    background-color: #0d7486;
+    color: beige;
+    text-align: left;
+    border-radius: 5px;
+}
+.Section:hover{
+    background-color: #074b57;
+
+}
