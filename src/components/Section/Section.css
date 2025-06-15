@@ -1,10 +1,44 @@
-.Section{
+.Section {
     background-color: #0d7486;
+    display: flex;
+    flex-wrap: wrap;
     color: beige;
     text-align: left;
     border-radius: 5px;
 }
-.Section:hover{
+
+.Section:hover {
     background-color: #074b57;
 
+}
+
+.card {
+    background-color: #146fa0;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+}
+.card:hover{
+    background-color: #105f8a;
+}
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Quitar el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor a una mano */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el cursor */
 }
