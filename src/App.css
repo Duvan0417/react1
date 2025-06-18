@@ -1,5 +1,20 @@
-.section{
+.section {
     background-color: #0d7486;
     color: beige;
     border-radius: 5px;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+/* Responsive para main-container */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

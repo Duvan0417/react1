@@ -1,6 +1,7 @@
 .footer{
     background-color: #0d7486;
     color: beige;
+    height: 100px;
     text-align: center;
     border-radius: 5px;
 }

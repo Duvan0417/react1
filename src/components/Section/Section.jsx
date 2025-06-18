@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Section/Section.css';
 import userImg from '../../assets/snake.png';
 import watermelonimg from '../../assets/watermelon.png';
 import blueberryimg from '../../assets/blueberry.png';
-
-const fruits = ['watermelon', 'apple', 'blueberry'];
+import UserCard from '../Usercard/UserCard';
 
 const users = [
     {
@@ -18,7 +17,7 @@ const users = [
         name: 'watermelon',
         descripcion: 'watermelon green',
         img: watermelonimg
-    },    
+    },
     {
         id: 3,
         name: 'blueberry',
@@ -28,19 +27,15 @@ const users = [
 ];
 
 export default function Section() {
-    const handleClick = (name) => {
-        console.log(`Contactarle a ${name}`);
-    };
-
+    const [count, setCount] = useState(0);
+    console.log(count);
     return (
-        <section className='Section'>
-            {users.map(({ id, name, descripcion, img }) => (
-                <div className='card' key={id}>
-                    <img className='image' src={img} alt={name} />
-                    <h2 className='h2'>{descripcion}</h2>
-                    <button id={id} onClick={() => handleClick(name)} className='button'>Contactarle</button>
-                </div>
-            ))}
+        <section className="Section">
+            {users.map((user) => {
+                return (
+                    <UserCard key={user.id} user={user} />
+                )
+            })}
         </section>
     );
 }
