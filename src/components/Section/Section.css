@@ -16,3 +16,11 @@
         padding: 15px;
     }
 }
+.cont{
+    text-align: center;
+    background-color: #0d7486;
+    color: rgb(0, 255, 115);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 25px;
+}
